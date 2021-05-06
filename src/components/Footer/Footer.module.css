@@ -10,7 +10,7 @@
 
 .socialMedias{
     border: solid 1px;
-    width: 300px;
+    width: 280px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

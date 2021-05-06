@@ -7,8 +7,17 @@
     text-align: left;
 }
 
-.icon {
+.imgContainer {
     height: 250px;
     width: 100%;
     background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    border: solid 1px;
+    padding: 10px;
+    background-color: dimgray;
 }

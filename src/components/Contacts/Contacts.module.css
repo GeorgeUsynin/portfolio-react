@@ -1,5 +1,5 @@
 .contactsBlock{
-    background-color: palegreen;
+    background-color: lemonchiffon;
 }
 
 .contactsContainer{
@@ -9,7 +9,12 @@
     padding-bottom: 40px;
 }
 
+.title{
+    background-color: gray;
+}
+
 .form{
+    width: 240px;
     display: flex;
     flex-direction: column;
     border: solid 1px;

@@ -8,10 +8,10 @@ export const Footer = () => {
             <div className={`${clsContainer.container} ${cls.footerContainer}`}>
                 <h4>George Usynin</h4>
                 <div className={cls.socialMedias}>
-                    <a href="">Facebook</a>
-                    <a href="">Twitter</a>
-                    <a href="">Instagram</a>
-                    <a href="">Linkedin</a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
                 </div>
                 <h6>&copy; 2021 All Rights Reserved.</h6>
             </div>

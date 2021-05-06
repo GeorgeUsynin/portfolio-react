@@ -1,0 +1,17 @@
+.footerBlock{
+    height: 200px;
+    background-color: thistle;
+}
+
+.footerContainer{
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.socialMedias{
+    border: solid 1px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,17 @@
+.contactsBlock{
+    background-color: palegreen;
+}
+
+.contactsContainer{
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    padding: 10px;
+}

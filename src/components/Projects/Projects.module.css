@@ -1,22 +1,19 @@
-.projectsBlock{
-    background-color: lightpink;
+.projectsBlock {
+    background-color: #222;
 }
 
-.projectsContainer{
+.projectsContainer {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    padding-bottom: 40px;
+    padding: 60px 0;
 }
 
-.title{
-    background-color: gray;
-}
-
-.projects{
-    border: 1px solid;
+.projects {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 60px;
 }

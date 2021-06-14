@@ -5,11 +5,13 @@ import cls from './Project.module.css'
 export const Project = (props) => {
     return (
         <div className={cls.project}>
-            <div className={cls.imgContainer}>
-                <a className={cls.links}>Click me</a>
+            <div className={cls.imgContainer} style={props.style}>
+                <a className={cls.links}>View</a>
             </div>
-            <h3 className={cls.title}>{props.title}</h3>
-            <span className={cls.description}>{props.description}</span>
+            <div className={cls.projectInfo}>
+                <h3 className={cls.projectTitle}>{props.title}</h3>
+                <p className={cls.description}>{props.description}</p>
+            </div>
         </div>
     )
 }

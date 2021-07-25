@@ -8,7 +8,6 @@ import todolist from '../../assets/images/todolist.jpg'
 import githubGreen from '../../assets/images/github.jpg'
 import cardsPacks from '../../assets/images/cards.jpg'
 import clemo from '../../assets/images/clemo.jpg'
-import {bindReporter} from 'web-vitals/dist/modules/lib/bindReporter';
 
 export const Projects = () => {
 

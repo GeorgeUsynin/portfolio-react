@@ -1,0 +1,77 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.distantWorkBlock {
+  padding: 200px 0;
+  background: linear-gradient(45deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%), url("../../assets/images/map2.png"), no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+
+    .back{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,.3);
+    }
+
+  .distantWorkContainer {
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+
+      .button {
+        @include text($fontFamilyTitle, 15px, 500, 46px, #fff);
+        margin-top: 30px;
+        box-shadow: none !important;
+        border-radius: 26px;
+        height: 46px;
+        text-transform: uppercase;
+        padding: 0 33px;
+        outline: none !important;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        letter-spacing: .5px;
+        border: 0;
+        background-color: $primaryColor;
+        opacity: .7;
+
+        & span{
+          position: relative;
+          z-index: 2;
+        }
+
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          height: 102%;
+          left: -25%;
+          width: 0%;
+          background-color: #555;
+          transform: skew(
+                          -22deg
+          );
+          transition-duration: .6s;
+          z-index: 1;
+        }
+
+        &:hover:before {
+          width: 180%;
+        }
+
+        &:hover {
+          cursor: pointer;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+        }
+      }
+    }
+  }
+}
+

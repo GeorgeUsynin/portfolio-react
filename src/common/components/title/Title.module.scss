@@ -1,0 +1,13 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+
+.title h2 {
+  @include text($fontFamilyTitle, 55px, 900, 1.2, $titleTextColor);
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+
+  span {
+    color: $primaryColor;
+  }
+}

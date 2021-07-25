@@ -1,0 +1,38 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+.skill {
+  width: 250px;
+  background-color: #555555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+
+  .iconContainer {
+    margin-top: -40px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+    background-color: $primaryColor;
+    .icon {
+      margin-top: 15px;
+    }
+  }
+
+  .title {
+    @include text($fontFamilyTitle, 21px, 600, 1.2, $titleTextColor);
+    text-transform: uppercase;
+    margin: 24px 0 12px;
+  }
+
+  .description {
+    @include text($fontFamilyText, 0.9em, 400, 2, $textColor);
+    margin: 0;
+  }
+}

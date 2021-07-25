@@ -1,0 +1,25 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.header {
+    height: 80px;
+    background-color: $bgColor;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    @media only all and (max-width: 1070px){
+        width: 90%;
+    }
+    @media only all and (max-width: 620px){
+        width: 100%;
+    }
+    @media only all and (max-width: 360px){
+        justify-content: center;
+    }
+}

@@ -1,21 +1,35 @@
-import React from "react";
-import cls from './Skills.module.css'
-import clsContainer from '../../common/styles/Container.module.css'
-import {Skill} from "./Skill/Skill";
-import {Title} from "../../common/components/title/Title";
+import React from 'react';
+import cls from './Skills.module.scss'
+import clsContainer from '../../common/styles/Container.module.scss'
+import {Skill} from './Skill/Skill';
+import {Title} from '../../common/components/title/Title';
+import {faCss3, faHtml5, faJs, faReact} from '@fortawesome/free-brands-svg-icons';
+import {faServer, faTasks} from '@fortawesome/free-solid-svg-icons';
 
 export const Skills = () => {
     return (
-        <div className={cls.skillsBlock}>
+        <div id={'skills'} className={cls.skillsBlock}>
             <div className={`${clsContainer.container} ${cls.skillsContainer}`}>
                 <Title titleH2={'My'} titleSpan={'skills'}/>
                 <div className={cls.skills}>
-                    <Skill title={'JavaScript'}
-                           description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolore ea facere facilis placeat qui tempore. Beatae dolores, eligendi, expedita laboriosam obcaecati perspiciatis reiciendis reprehenderit sapiente totam unde ut veritatis.'}/>
-                    <Skill title={'HTML'}
-                           description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolore ea facere facilis placeat qui tempore. Beatae dolores, eligendi, expedita laboriosam obcaecati perspiciatis reiciendis reprehenderit sapiente totam unde ut veritatis.'}/>
+                    <Skill title={'React/Redux'}
+                           description={'UI & BLL'}
+                           icon={faReact}/>
+                    <Skill title={'JS/TS'}
+                           description={'JavaScript & TypeScript'}
+                           icon={faJs}/>
                     <Skill title={'CSS'}
-                           description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolore ea facere facilis placeat qui tempore. Beatae dolores, eligendi, expedita laboriosam obcaecati perspiciatis reiciendis reprehenderit sapiente totam unde ut veritatis.'}/>
+                           description={'Modern responsive layout'}
+                           icon={faCss3}/>
+                    <Skill title={'HTML'}
+                           description={'High-quality page structure'}
+                           icon={faHtml5}/>
+                    <Skill title={'Unit testing'}
+                           description={'Writing tests for the application'}
+                           icon={faTasks}/>
+                    <Skill title={'Axios'}
+                           description={'Interaction with the server'}
+                           icon={faServer}/>
                 </div>
             </div>
         </div>

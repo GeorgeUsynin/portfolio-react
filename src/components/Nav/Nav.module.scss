@@ -1,0 +1,20 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    a{
+        @include text($fontFamilyTitle, 16px, 400, 1.2, $titleTextColor);
+        text-decoration: none;
+        padding: 0 10px;
+        color: $primaryColor;
+    }
+    a:hover{
+        color: $linksColor;
+    }
+    @media only all and (max-width: 360px){
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,87 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.mainBlock {
+  height: 100vh;
+  background-color: $bgColor;
+  display: flex;
+
+  .relative{
+    position: relative;
+
+    .back{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,.85);
+      border-radius: 5px;
+    }
+
+    .greetingTextBlock {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      align-items: center;
+
+      h3 {
+        @include text($fontFamilyText, 19px, 400, 1.2, #EEEEEE);
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        @media only all and (max-width: 620px){
+          font-size: 14px;
+        }
+      }
+
+      h1 {
+        @include text($fontFamilyTitle, 55px, 400, 1.2, $primaryColor);
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        span{
+          color: #EEEEEE;
+        }
+        @media only all and (max-width: 620px){
+          font-size: 34px;
+        }
+        @media only all and (max-width: 360px){
+          font-size: 32px;
+        }
+      }
+
+      h2{
+        text-align: center;
+        @include text($fontFamilyText, 20px, 400, 1.2, $linksColor);
+        text-transform: uppercase;
+        margin-left: 15px;
+        margin-right: 15px;
+        @media only all and (max-width: 620px){
+          font-size: 14px;
+        }
+      }
+
+    }
+
+    .photo{
+      border-radius: 5px;
+      opacity: 0.9;
+      background-image: url('../../assets/images/me.jpg');
+      background-size: cover;
+      height: 100%;
+      width: 50%;
+      filter: grayscale(100%);
+    }
+  }
+
+  @media only all and (max-width: 1280px){
+    height: 65vh;
+  }
+  @media only all and (max-width: 620px){
+    height: 35vh;
+  }
+
+}
+
+

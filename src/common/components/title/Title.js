@@ -1,5 +1,5 @@
 import React from "react";
-import cls from './Title.module.css'
+import cls from './Title.module.scss'
 
 
 export const Title = (props) => {

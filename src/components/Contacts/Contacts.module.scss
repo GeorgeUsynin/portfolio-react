@@ -1,0 +1,213 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.contactsBlock {
+  background-color: $bgColor;
+
+  .contactsContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 0;
+  }
+
+  .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 60px;
+
+    .nameContainer {
+      margin-bottom: 30px;
+      position: relative;
+
+      .icon{
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        color: #555555;
+      }
+      .name {
+        @include text($fontFamilyText, 14px, 300, 1.5, $textColor);
+        @include contactFields(46px)
+      }
+
+    }
+
+    .emailContainer {
+      margin-bottom: 30px;
+      position: relative;
+
+      .icon{
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        color: #555555;
+      }
+
+      .email {
+        @include text($fontFamilyText, 14px, 300, 1.5, $textColor);
+        @include contactFields(46px)
+      }
+
+    }
+
+    .messageContainer {
+      margin-bottom: 30px;
+      position: relative;
+
+      .icon{
+        position: absolute;
+        top: 9px;
+        left: 20px;
+        color: #555555;
+      }
+
+      .message {
+        @include text($fontFamilyText, 14px, 300, 1.5, $textColor);
+        @include contactFields(85px)
+      }
+
+    }
+
+    .submitForm {
+      text-align: center;
+
+      .sendButton {
+        @include text($fontFamilyTitle, 15px, 500, 46px, #fff);
+        box-shadow: none !important;
+        border-radius: 26px;
+        height: 46px;
+        text-transform: uppercase;
+        padding: 0 33px;
+        outline: none !important;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        letter-spacing: .5px;
+        border: 0;
+        background-color: $primaryColor;
+
+        .icon{
+          margin-right: 10px;
+          position: relative;
+          z-index: 2;
+        }
+
+        & span{
+          position: relative;
+          z-index: 2;
+        }
+
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          height: 102%;
+          left: -25%;
+          width: 0%;
+          background-color: #555;
+          transform: skew(
+                          -22deg
+          );
+          transition-duration: .6s;
+          z-index: 1;
+        }
+
+        &:hover:before {
+          width: 180%;
+        }
+
+        &:hover {
+          cursor: pointer;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+        }
+      }
+
+
+    }
+
+    @media only all and (max-width: 768px){
+      width: 80%;
+    }
+    @media only all and (max-width: 360px){
+      width: 95%;
+    }
+
+  }
+
+  .thank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 337px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    img{
+      height: 100px;
+      width: 60px;
+    }
+
+    p {
+      @include text($fontFamilyText, 26px, 400, 1.5, $textColor);
+      margin: 0;
+    }
+
+    .newMessage {
+      @include text($fontFamilyTitle, 15px, 500, 46px, #fff);
+      box-shadow: none !important;
+      border-radius: 26px;
+      height: 46px;
+      text-transform: uppercase;
+      padding: 0 33px;
+      outline: none !important;
+      overflow: hidden;
+      display: inline-block;
+      position: relative;
+      letter-spacing: .5px;
+      border: 0;
+      background-color: $primaryColor;
+
+      .icon{
+        margin-right: 10px;
+        position: relative;
+        z-index: 2;
+      }
+
+      & span{
+        position: relative;
+        z-index: 2;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        height: 102%;
+        left: -25%;
+        width: 0%;
+        background-color: #555;
+        transform: skew(
+                        -22deg
+        );
+        transition-duration: .6s;
+        z-index: 1;
+      }
+
+      &:hover:before {
+        width: 180%;
+      }
+
+      &:hover {
+        cursor: pointer;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+      }
+    }
+  }
+}

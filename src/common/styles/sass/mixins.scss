@@ -1,0 +1,20 @@
+@mixin text($fontFamily,$fontSize,$font-weight,$line-height,$color) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin contactFields ($height) {
+  width: 100%;
+  height: $height;
+  padding: 6px 12px 6px 49px;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: none !important;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  margin: 0;
+  background: #333;
+  border: 1px solid #444;
+}

@@ -8,6 +8,7 @@ import todolist from '../../assets/images/todolist.jpg'
 import githubGreen from '../../assets/images/github.jpg'
 import cardsPacks from '../../assets/images/cards.jpg'
 import clemo from '../../assets/images/clemo.jpg'
+import catalog from '../../assets/images/catalog.jpg'
 
 export const Projects = () => {
 
@@ -31,6 +32,10 @@ export const Projects = () => {
         backgroundImage: `url(${clemo})`,
     }
 
+    const shop = {
+        backgroundImage: `url(${catalog})`,
+    }
+
 
     return (
         <div className={cls.projectsBlock} id={'projects'}>
@@ -38,7 +43,7 @@ export const Projects = () => {
                 <Title titleH2={'My'} titleSpan={'projects'}/>
                 <div className={cls.projects}>
                     <Project title={'Cards'}
-                             description={'An application that allows you to create decks with cards that you can learn from. Registration of a new user, password recovery, profile editing are available in the application. The selection of questions is implemented using a smart random algorithm.'}
+                             description={'An application that allows you to create decks with cards that you can learn from. Registration of a new user, password recovery, profile editing are available in the application. The selection of questions is implemented using a smart random algorithm'}
                              style={cards}
                              link={'https://georgeusynin.github.io/cards-react-redux/'}
                     />
@@ -57,6 +62,11 @@ export const Projects = () => {
                              style={social}
                              link={'https://georgeusynin.github.io/social-network-react-redux/'}
                              showTestData={true}
+                    />
+                    <Project title={'Mini-shop'}
+                             description={'In this app you can add purchases into your cart. You can delete products or place the order. All information about your order will be converted into JSON format. Your products in the shopping cart will also be available after the page is reloaded. All styles are implemented using MATERIAL-UI. The back-end is implemented using FIREBASE'}
+                             style={shop}
+                             link={'https://GeorgeUsynin.github.io/shop-firebase-react-redux/'}
                     />
                     <Project title={'TodoList'}
                              description={'It helps you remember all'}
